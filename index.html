@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Reference guide for Certificate Identity Declaration SDK for Citrix Receiver for Linux 13.10">  
+    <title>Certificate Identity Declaration SDK for Citrix Receiver for Linux 13.10</title>
+     
+    <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png"> 
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="./css/highlight.css">
+    <link rel="stylesheet" href="./css/override.css" type="text/css" />
+    <link rel="stylesheet" href="./css/font-awesome.css" type="text/css" /> 
+    <script>
+      // Current page data
+      var mkdocs_page_name = "None";
+      var mkdocs_page_input_path = "index.md";
+      var mkdocs_page_url = "/";
+
+    </script>
+    
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="./js/highlight.pack.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/custom.js"></script>  
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+    <div class="header-top">
+
+        <div class="header-top-left">
+          <a href="http://developer-docs.citrix.com" class="logo-position"><img height="60" src="./img/citrixlogoblack.png" target="_blank" class="logo-citrix"><span style="color:#000;font-size: 20px;position: relative;top:4px;left:20px;">Developer Documentation</span></a>
+        </div>
+        <div class="header-top-right">
+          <ul>
+
+            <form id="rtd-search-form-alt" class="wy-form" action="./search.html" method="get">
+             <ul class="header-elements">
+              <li class="list-inline support">
+                <input name="q" id="txtName" type="text" placeholder="Search SDKs" class="searchdocs">
+                <a class="fa fa-search errspan"></a>
+<!---
+              </li>
+             <li> <a href="javascript:void(0);" style="font-size: 22px;position: relative;left: -10px;top: 3px"><i class="fa fa-globe"></i></a></li>
+             </ul>
+             --->
+            </form>
+
+          </ul>
+
+        </div>
+
+    </div>
+    <div class="body">
+      <div class="wy-grid-for-nav">
+
+        
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+          <div class="wy-side-nav-search">
+            <div role="search">
+  <form id ="rtd-search-form-alt" class="wy-form" action="./search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+          </div>
+
+          <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+            <ul class="current">
+              
+              
+    <li class="toctree-l1 current">
+        <a class="toctree-l1-a current" href=".">Home</a>
+		
+            <ul style="margin-left: 0px;padding-left:15px;border-left: 1px solid #b2b2b2;">
+            
+                <li class="toctree-l3"><a href="#certificate-identity-declaration-sdk-for-citrix-receiver-for-linux-1310" style="padding:0px;position: relative;">&nbsp;Certificate Identity Declaration SDK for Citrix Receiver for Linux 13.10</a></li>
+                
+                    <li><a class="toctree-l4" href="#compatibility-with-receiver" style="padding:0px;position: relative;">Compatibility with Receiver</a></li>
+                
+                    <li><a class="toctree-l4" href="#who-should-use-this-sdk" style="padding:0px;position: relative;">Who should use this SDK?</a></li>
+                
+                    <li><a class="toctree-l4" href="#the-sample-plugin" style="padding:0px;position: relative;">The sample plugin</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-history" style="padding:0px;position: relative;">Change history</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+			  
+            </ul>
+          </div>
+          &nbsp;
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+           
+          <div class="wy-nav-content">
+            <div class="rst-content">
+              <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+              <div role="main">
+                <div class="section">
+                <div class="file-format">
+                 <div class="leftAlign" style="float: left;visibility: hidden;">
+                  </div>
+                  <div class="rightAlign" style="float: right;">
+                      <span>Download full document:</span>
+                      <ul class="file-types">
+                        <li><a style="border: 1px solid #EE3D24;padding: 5px;font-size: 11px;color: #EE3D24;border-radius: 5px;font-weight: 700">PDF</a></li>
+                        <li><a style="border: 1px solid #2A579A;padding: 5px;font-size: 11px;color: #2A579A;border-radius: 5px;font-weight: 700">DOCX</a></li>
+                        <li><a style="border: 1px solid #495164;padding: 5px;font-size: 11px;color: #495164;border-radius: 5px;font-weight: 700">EMAIL</a></li>
+                        <li><a style="border: 1px solid #495164;padding: 5px;font-size: 11px;color: #495164;border-radius: 5px;font-weight: 700">PRINT</a></li>
+                      </ul>
+                  </div>
+                  </div>
+                   <h1 id="certificate-identity-declaration-sdk-for-citrix-receiver-for-linux-1310"><a class="toclink" href="#certificate-identity-declaration-sdk-for-citrix-receiver-for-linux-1310">Certificate Identity Declaration SDK for Citrix Receiver for Linux 13.10</a></h1>
+<h2 id="compatibility-with-receiver"><a class="toclink" href="#compatibility-with-receiver">Compatibility with Receiver</a></h2>
+<p>This is Version 13.10 of the Certificate Identity Declaration SDK. It is intended for use with Receiver for Linux builds in the 13.10 series. There are separate versions of the SDK for each of the released architectures (X86, X86_64, and ARMhf) that differ only in the included binaries. </p>
+<h2 id="who-should-use-this-sdk"><a class="toclink" href="#who-should-use-this-sdk">Who should use this SDK?</a></h2>
+<p>The purpose of this SDK is to provide developers with a means of declaring the user's smart card identity to a StoreFront server without performing a full smart card based authentication. </p>
+<p>CID (Certificate Identity Declaration) is motivated by trying to get a speed up when using older smart cards which were noticeably slow. The CID protocol bypasses the crypto step the smart card does for logging on to a StoreFront server (the ICA launch still uses smart card though). </p>
+<p>With CID the client just sends to StoreFront the public client certificate to identify the user instead of doing a full SSL handshake. This approach is significantly faster than a proper client certificate logon, especially when slow smart cards are involved. </p>
+<p>The developers who want to create their own plugin must conform to the <strong>"CitrixAuthManagerCustomProtocolSDK.h"</strong> header file available in the <strong>"include"</strong> directory. Refer to the file and to the sample code for more information. </p>
+<p>To use this feature, the CID extension has to be installed and the protocol enabled in the StoreFront site. Please refer to the documentation of the StoreFront Authentication SDK.</p>
+<h2 id="the-sample-plugin"><a class="toclink" href="#the-sample-plugin">The sample plugin</a></h2>
+<p>To build the sample plugin, the cURL library must be installed on the system, most Linux distribution make it available through their native package managers. </p>
+<p>The sample plugin will build into two modules both named "libCID.so", coming in both debug and retail version, the former containing the debugging symbols. </p>
+<p>The sample plugin can be used with Citrix Receiver for Linux by adding the following entries to the Auth Manager's configuration file (located by default at /opt/Citrix/ICAClient/config/AuthManConfig.xml): </p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>ProtocolOrder<span class="nt">&lt;/key&gt;</span> 
+<span class="nt">&lt;value&gt;</span>certificateidentitydeclaration<span class="nt">&lt;/value&gt;</span>  
+
+<span class="nt">&lt;Protocols&gt;</span>     
+    <span class="nt">&lt;certificateidentitydeclaration&gt;</span>         
+        <span class="nt">&lt;Enabled&gt;</span>True<span class="nt">&lt;/Enabled&gt;</span>         
+        <span class="nt">&lt;KeepLibraryLoaded&gt;</span>True<span class="nt">&lt;/KeepLibraryLoaded&gt;</span>         
+        <span class="nt">&lt;Path&gt;</span>/path/to/plugin/libCID.so<span class="nt">&lt;/Path&gt;</span>         
+        <span class="nt">&lt;PluginType&gt;</span>CustomProtocolDLL<span class="nt">&lt;/PluginType&gt;</span>     
+    <span class="nt">&lt;/certificateidentitydeclaration&gt;</span> 
+<span class="nt">&lt;/Protocols&gt;</span> 
+</pre></div>
+
+
+<p>Duplicate nodes are not allowed in AuthManConfig.xml. If the "Protocols" node already exists, the contents of the example above have to be combined with the existing node. </p>
+<p>After changes had been made to the configuration file, Auth Manager has to be restarted to acquire them. </p>
+<p>The name of the protocol specified in the "ProtocolOrder" key must match the name of the corresponding node under "Protocols". </p>
+<p>For clarity, in this example only Certificate Identity Declaration has been specified in the list of protocols. Other protocols can be added to the list. </p>
+<p>The value of "KeepLibraryLoaded" in the protocol configuration specifies whether the module has to be kept loaded in memory after use. If set to "False", the module will be reloaded upon each use. </p>
+<p>After being loaded and launched, the sample plugin will look for a certificate name "UserIdentifyingCertificate.cer" in the home directory of the current user. This should be the public certificate from the smart card. </p>
+<p>In the example provided, the path and the name of the certificate to use are hard-coded.</p>
+<h2 id="change-history"><a class="toclink" href="#change-history">Change history</a></h2>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13.8 and later</td>
+<td>Remove support for the armel platform</td>
+</tr>
+<tr>
+<td>13.5</td>
+<td>No change</td>
+</tr>
+<tr>
+<td>13.4</td>
+<td>The first release of this SDK. Includes a sample plugin and its source code</td>
+</tr>
+</tbody>
+</table> 
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+    <!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+  </body>
+
+</html>
+
+<!--
+MkDocs version : 0.16.1
+Build Date UTC : 2018-06-21 17:45:30
+-->
